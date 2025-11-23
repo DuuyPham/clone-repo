@@ -1,0 +1,148 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --text-white: #fff;
+  --text-black: #333;
+  --primary-color: #fe6132;
+  --primary-bolder-color: #ee4d2d;
+  --header-height: 120px;
+  --border-color: #dbdbdb;
+  --hover-light-grey: #fff4f4;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.text-strong {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.active {
+  background: rgb(255, 192, 203);
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.btn {
+  min-width: 142px;
+  height: 35px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  line-height: 35px;
+}
+
+.btn.btn--primary {
+  background: var(--primary-bolder-color);
+  color: var(--color-white);
+}
+.btn-s.btn--primary {
+  background: var(--primary-bolder-color);
+  color: var(--color-white);
+}
+.btn-extra-s.btn--primary {
+  background: var(--primary-bolder-color);
+  color: var(--color-white);
+}
+.btn--primary-normal {
+  background: rgba(213, 213, 213, 0.2);
+  color: var(--text-black);
+}
+
+.btn-s {
+  min-width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  line-height: 25px;
+}
+
+.btn-extra-s {
+  min-width: 40px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+.arrow {
+  content: "";
+  position: absolute;
+  border-width: 20px 40px;
+  border-style: solid;
+  border-color: transparent transparent var(--color-white) transparent;
+  /* top: -28px;
+  right: 0; */
+  z-index: 1;
+}
+
+.bridge::before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 100px;
+  position: absolute;
+  top: 92%;
+  right: 0;
+}
+
+/* anmation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
